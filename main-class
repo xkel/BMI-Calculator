@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Lab2 {
+	public static void main(String[] args){
+		System.out.println("This program calculates your Body Mass Index (BMI)");
+		System.out.println("==================================================");
+		
+		//This block of code takes inputs: height and weight
+		System.out.println("Enter your weight in lbs: ");
+		Scanner in = new Scanner(System.in);
+		double weight = in.nextDouble();
+		System.out.println("Enter your height in inches: ");
+		Scanner in2 = new Scanner(System.in);
+		double height = in2.nextDouble();
+		
+		//This converts your weight from lbs to kilograms
+		weight = weight * 0.453592;
+		System.out.println("Your weight in kilograms is " +weight);
+		
+		//This converts your height from inches to meters
+		height = height * 0.0254;
+		System.out.println("Your weight in meters is " +height);
+				
+		//Calculates your BMI given the inputs
+		double bmi = (weight)/Math.pow(height, 2);
+		System.out.println("Your BMI is " +bmi);
+		
+		
+		
+		
+	}
+
+}
